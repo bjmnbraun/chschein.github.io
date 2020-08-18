@@ -1,0 +1,17 @@
+function toggleElementVisibility(id){
+   if(typeof(id.toLowerCase) != 'undefined') var d = document.getElementById(id);
+   else var d = id;
+   
+   var reVisible = /Visible/gi
+   var reHidden = /Hidden/gi
+   
+   if(d.className.match(reHidden)) 
+      d.className = d.className.replace(reHidden, 'Visible');
+   else if (d.className.match(reVisible)) 
+		d.className = d.className.replace(reVisible, 'Hidden');
+   else {
+	   //if it doesn't have either classname we are assuming it is visible and want to hide it
+	   d.className = d.className + " Hidden";
+   }
+}
+

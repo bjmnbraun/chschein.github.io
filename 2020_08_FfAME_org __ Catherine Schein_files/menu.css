@@ -1,0 +1,125 @@
+
+body {font-family:Arial, Helvetica, sans-serif;}
+
+ul.collapsed {display:none;}
+ul.expanded {display:block;}
+
+#mainmenucontainer {
+	background-image: url('../images/lev1bg.gif');
+	background-color:#6B9CCE;
+	background-position:bottom;
+	background-repeat:repeat-y;
+	width: 178px;
+	}
+
+#mainmenu {
+	background-image: url('../images/lev1bottom.gif');
+	background-repeat:no-repeat;
+	background-position:bottom;
+	padding-bottom:30px;
+	}
+	
+.menushadow {
+	height:4px;
+	width:178px;
+	background-image: url('../images/lev1expandedshadow.gif');
+	background-repeat:no-repeat;
+	margin:0;
+	padding:0;
+	font-size:1pt;
+}
+
+/*Level One Style*/
+#mainmenu .lev1 {
+	padding: 0 0 0 22px;
+	margin: 0;
+	}
+
+#mainmenu .lev1 li {
+	background-image: url('../images/lev1navdi.gif');
+	background-repeat:no-repeat;
+	background-position: 0px 5px;
+	margin:0;
+	padding: 3px 0 3px 30px;
+	list-style:none;
+	}
+
+#mainmenu .lev1 li.expanded {
+	background-image: url('../images/lev1expanded.gif');
+	background-repeat:no-repeat;
+	background-position: 0px 3px;
+	margin: 0 0 0 -22px;
+	padding: 3px 0 3px 52px;
+	list-style:none;
+	}
+
+#mainmenu .lev1 a, #mainmenu .lev1 a:link, #mainmenu .lev1 a:active, #mainmenu .lev1 a:visited 
+{
+  color:#fff; 
+  text-decoration:none; 
+  font-size:14px; 
+  font-weight:bold;
+}
+
+#mainmenu .lev1 a:hover {
+  text-decoration:underline;
+}
+
+/* Level Two Style */
+#mainmenu .lev2 
+{
+  background-image: url('../images/lev2bottom.gif');
+  background-position:bottom;
+  background-repeat: no-repeat;
+  padding: 0 0 15px 0;
+  margin: 0 0 0 -52px;
+}
+
+#mainmenu .lev2 li 
+{
+  background-image: url('../images/lev2navdi.gif');
+  background-position: 25px 3px;
+  background-repeat: no-repeat;
+  margin:0 0 0 0;
+  padding: 0 0 2px 53px;
+  list-style:none;
+}
+
+#mainmenu .lev2 li.expanded 
+{
+  background-image: url('../images/lev2navdi-b.gif');
+  background-position: 25px 5px;
+  background-repeat: no-repeat;
+  margin:0 0 0 0;
+  padding: 0 0 0px 53px;
+  list-style:none;
+}
+
+#mainmenu .lev2 a, #mainmenu .lev2 a:link, #mainmenu .lev2 a:active, #mainmenu .lev2 a:visited
+{
+  color:#000; 
+  text-decoration:none; 
+  font-size:12px; 
+  font-weight:bold;
+}
+
+#mainmenu .lev2 a:hover 
+{
+  text-decoration:underline;
+}
+
+/* Level Three Style */
+#mainmenu .lev3 {
+  padding: 0;
+  margin: 0;
+}
+
+#mainmenu .lev3 li {
+  background-image: url('../images/spacer.gif');
+  margin:0;
+  padding: 0 0 0 10px;
+  list-style:none;
+}
+
+#mainmenu .lev3 a, #mainmenu .lev3 a:link, #mainmenu .lev3 a:active, #mainmenu .lev3 a:visited {color:#000; text-decoration:none; font-size:12px; font-weight:normal;}
+#mainmenu .lev3 a:hover {text-decoration:underline;}

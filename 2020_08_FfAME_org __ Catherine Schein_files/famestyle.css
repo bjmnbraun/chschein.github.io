@@ -1,0 +1,462 @@
+body 
+{
+  font-size: 12px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #000000
+  background-color: #C0C0C0;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+
+.Hidden {
+   display:none;
+}
+.Visible {
+   display:block;
+}
+
+/* Sidestory styles */
+
+.sidestory { 
+   background: #e0e0e0 url('../images/gray_bg.gif') right repeat-y; 
+   font-size: 11px; 
+   margin: 10px 0px 0px 0px;
+ } 
+
+.sidestory h1 { 
+   font-size: 13px; 
+   font-weight: bold; 
+   background: #FBB02B url('../images/orange_top.gif') no-repeat; 
+   padding: 2px 2px 2px 19px; 
+   margin: 0px 8px 0px 0px;  /* Required for image placement */
+} 
+  
+.sidestory .headercorner { 
+   background: url('../images/orange_top_right.gif') top right no-repeat; 
+} 
+  
+.sidestory .bottom { 
+  height: 9px; 
+  background: url('../images/gray_bottom.gif') bottom left no-repeat; 
+  margin: 0px 0px 10px 0px;
+} 
+  
+.sidestory .bottom .bottomcorner { 
+      height: 9px; 
+      background: url('../images/gray_bottom_corner.gif') bottom right no-repeat; 
+ } 
+  
+.sidestory p { 
+   margin: 4px 8px 0px 8px;
+   text-align: justify; 
+}
+
+.sidestory p img { 
+   float: none; 
+   vertical-align: middle;
+}
+
+.sidestory ul {
+   margin-top: 4px;
+   margin-bottom: 4px;
+   margin-right: 8px;
+}
+
+/* leftstory styles */
+
+.leftstory {
+   background: #e0e0e0 url('../images/gray_bg.gif') right repeat-y;
+   font-size: 11px;
+   margin: 10px 0px 0px 0px;
+ }
+
+.leftstory h1 {
+   font-size: 13px;
+   font-weight: bold;
+   background: #FBB02B url('../images/orange_top_squared.gif') no-repeat;
+   padding: 2px 2px 2px 19px;
+   margin: 0px 8px 0px 0px;  /* Required for image placement */
+}
+
+.leftstory .headercorner {
+   background: url('../images/orange_top_right.gif') top right no-repeat;
+}
+
+.leftstory .bottom {
+  height: 9px;
+  background: url('../images/gray_bottom_squared.gif') bottom left no-repeat;
+  margin: 0px 0px 10px 0px;
+}
+
+.leftstory .bottom .bottomcorner {
+      height: 9px;
+      background: url('../images/gray_bottom_corner.gif') bottom right no-repeat;
+ }
+
+.leftstory p {
+   margin: 4px 8px 0px 8px;
+   text-align: justify;
+}
+
+.leftstory p img {
+   float: none;
+   vertical-align: middle;
+}
+
+.leftstory ul {
+   margin-top: 4px;
+   margin-bottom: 4px;
+   margin-right: 8px;
+}
+
+/* IE Inteprets start of text differently than
+   mozilla - must use left margin of li, not ul */
+.sidestory li { 
+   margin-left: -16px;
+   font-size: 11px; 
+   list-style-type: square;
+   list-style-position: outside;
+}
+
+/*  IE Interprets start of text
+    differently than mozilla
+.sidestory ul {
+   /*margin: 4px 8px 0px 20px;*/
+   margin: 4px 8px 0px -20px;
+}
+.sidestory li { 
+   /*margin: 0px 0px 0px -20px;*/
+   font-size: 11px; 
+   list-style-type: square;
+   list-style-position: outside;
+}
+*/
+
+.sidestory img {
+   horizontal-align:center;
+}
+
+.sidestory img.bioPhoto
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+/*Styles for the publications part.*/
+
+.FigureBlock
+{
+   text-align:center;
+   padding: 3px;
+   border: solid 1px #000;
+   margin: 3px;
+}
+
+.FloatLeft
+{
+   float:left;
+}
+.FloatRight
+{
+   float:right;
+}
+.Block
+{
+   display:block;
+}
+
+.Centered img
+{
+   vertical-align:middle;
+}
+
+.FigureBlockCaption 
+{
+   border: solid 2px #000;
+   padding: 5px;
+   background: #BBB;
+}
+
+
+/* Special stuff added by SGC */
+
+#right
+{
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+   font-size: 11px; 
+}
+
+
+#main
+{
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 0px;
+}
+
+#main h1
+{
+   font-size: 18px; 
+   font-weight: bold; 
+   padding: 0px 0px 0px 0px;
+   margin: 6px 0px 0px 0px;
+}
+
+#main div /* Main page article */
+{
+   padding: 0px 0px 0px 0px;
+   margin: 12px 0px 15px 0px;
+}
+
+/* Set the style of main content links - set color to blue always */
+#main a, #mainmenu a:link, #mainmenu a:active, #mainmenu a:visited, #quicknav a
+{
+  color: #0000CC;
+  text-decoration:none; 
+  font-weight:bold;
+}
+
+#main a:hover, #quicknav a:hover
+{
+  text-decoration:underline;
+}
+
+#main div h1
+{
+   font-size: 14px; 
+   font-weight: bold; 
+   padding: 0px 0px 0px 0px;
+   margin: 6px 0px 0px 0px;
+   color: #001F59
+}
+
+#main div h2
+{
+   font-size: 13px; 
+   font-weight: bold; 
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 6px 0px;
+}
+
+#main div p
+{
+   padding: 0px 0px 0px 0px;
+   margin: 4px 4px 4px 4px;
+}
+
+#main div img
+{
+   padding: 0px 0px 0px 0px;
+   margin: 0px 4px 0px 4px;
+   vertical-align:middle;
+   float:right;
+}
+
+#main p.linkbar img {
+   float: none;
+   margin: 0px 4px 0px 6px;
+}
+
+#main p.linkbar {
+  font-size: 11px;
+  margin: 0px 4px 0px 0px
+}
+
+#main div.Publication {
+   margin: 4px 0px 0px 0px;
+}
+
+#main div.Publication img {
+   float: left;
+   margin: 0px 4px 0px 6px;
+}
+
+#main div.Publication p {
+  font-size: 11px;
+  margin: 0px 4px 0px 24px
+}
+
+#main div.Abstract
+{
+   border: solid 2px #C0C0C0;
+   padding: 6px;
+   font-size: 11px;
+}
+
+#main div.Abstract p
+{
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+
+#main p.date{
+  font-size: 10px;
+  text-align: right;
+  margin: 2px;
+  padding-right: 4px;
+}
+
+#main font.intro {
+  font-size: 16px;
+  font-family: sans-serif, Verdana, Arial, Helvetica;
+}
+
+.revcolor
+{
+   font-size: 16px;
+   font-weight: bold;
+   color: #ffffff;
+   background-color: #fbb02a;
+   margin: 0px 50px 10px 0px;
+   border: solid 1px #000000;
+   text-align: center;
+   text-transform:uppercase;
+   width: 100%;
+}
+
+
+#tagline
+{
+  text-align: right;
+  font-size: 11px;
+  margin: 6px 10px 0px 10px;
+}
+
+#quicknav
+{
+   font-size: 12px; 
+   font-color: #333333;
+   font-weight: bold;
+}
+
+a.topnav
+{
+   font-size : 14px;
+   font-weight: bold;
+   text-decoration:none;
+   text-transform:uppercase;
+   color:#000;
+   vertical-align:top;
+   line-height:18px;
+   margin: 0px 30px 20px 0px;
+}
+
+
+#feature
+{
+  /*border: solid 1px #000000;*/
+}
+
+#main .frontspread
+{
+   text-align: justify;
+}
+
+#main .frontspread h1
+{
+   font-size: 18px;
+   text-align: center;
+}
+
+#main .frontspread img
+{
+   margin: 8px 8px 8px 8px;
+   padding: 8px 8px 8px 8px;
+   float: none;
+}
+
+td {
+   /*border: solid 1px #000000;*/
+}
+
+h1.fame
+{
+  font-size: 18px;
+  font-weight: bold;
+  color: #001F59;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 6px 0px;
+}
+
+font.fameH1
+{
+  font-size: 18px;
+  font-weight: normal;
+  color: #001F59;
+}
+
+hr.clearHack
+{
+  display: block;
+  clear: left;
+  margin: -0.66em 0;
+  visibility: hidden;
+}
+
+/*****************************************************************************
+ * News ID and related classes (used for displaying News and Events)
+ ****************************************************************************/
+
+#news
+{
+  
+}
+
+#news div
+{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#news p.news
+{
+  margin: 0px 0px 0px 0px;
+  padding: 4px 4px 4px 4px;
+  text-align: justify;
+  width: 100%;
+}
+
+#news img.news
+{
+  margin: 0px 0px 2px 0px;
+  border-style: solid;
+  border-width: 1px;
+  float: none;
+}
+
+/*****************************************************************************
+ * co-worker ID and related classes (used for displaying Former Co-workers)
+ ****************************************************************************/
+
+#coworker
+{
+  
+}
+
+#coworker div
+{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#coworker table
+{
+  
+}
+
+#coworker th
+{
+  text-align: left;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+#coworker td
+{
+  text-align: left;
+  vertical-align: middle;
+}

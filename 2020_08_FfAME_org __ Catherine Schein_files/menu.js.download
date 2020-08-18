@@ -1,0 +1,76 @@
+//factory function that makes the togglers
+function toggler(matchRe, replacement){
+   var f = function(li, stop){
+      if( li.className.match(matchRe)) {
+		   li.className = li.className.replace(matchRe, replacement);
+		   if(!stop){
+		      mapKids(li, f);
+		   }
+		   return true;
+	   }
+	return false;
+   }
+   return f;
+}
+
+//the togglers we like
+var openMenu = toggler(/collapsed/, "expanded");
+var closeMenu = toggler(/expanded/, "collapsed");
+
+//apply func to all kids of li with a className
+function mapKids(li, func){
+   if(li.childNodes){
+      var child;
+	   for(var i =0; i < li.childNodes.length; i++) {
+		   child = li.childNodes[i];
+		   if(child.className) {
+		      //tell the function to stop processing after this one.
+		      func(child, true);
+		   }
+	   }
+	}
+}
+
+
+//IE doesn't support item.hasAttribute(attr), so here we are.
+function hasAttribute(item, attr){
+   return item.getAttribute(attr) != null;
+}
+
+//Loops through the <LI>s and adds the menu events if they have a $menuAttribute attribute.
+function findAllLies() {
+
+   //which li attribute should identify a dynamic menu.
+   var menuAttribute= 'dynamicMenu'
+   //which li attribute should identify if its open by default.
+   var openAttribute= 'openByDefault'
+   
+
+
+   //event handling function, guts are in toggleMenu.
+	function toggleVisible(e) {
+		if (!e) e = window.event;
+		var li = e.target || e.srcElement;
+		//toggle it if we have a className
+		li.className && ( openMenu(li) || closeMenu(li) );
+		e.cancelBubble = true;
+		if (e.stopPropagation) e.stopPropagation();
+	}
+
+	var elements = document.getElementsByTagName('li');
+	for(var i =0; i < elements.length; i++) {
+	   var li = elements[i];
+      //only attach the event if we are part of the menu	   
+	   if (hasAttribute(li, menuAttribute)){
+	      if(li.addEventListener) li.addEventListener('click', toggleVisible, false);
+		   else if(li.attachEvent) li.attachEvent('onclick', toggleVisible);
+		   
+		   if (li.getAttribute(openAttribute) != null && li.getAttribute(openAttribute) == '1'){
+		      while(li.parentNode){
+		         if(hasAttribute(li, menuAttribute)) openMenu(li);
+		         li = li.parentNode;
+		      }
+		   }
+		}
+	}
+}

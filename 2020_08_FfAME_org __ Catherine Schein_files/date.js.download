@@ -1,0 +1,20 @@
+var Days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+var Months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+var today = new Date();
+var Year = takeYear(today);
+var Month = Months[today.getMonth()];
+var Day = leadingZero(today.getDate());
+function takeYear(theDate)
+{
+	x = theDate.getYear();
+	var y = x % 100;
+	y += (y < 38) ? 2000 : 1900;
+	return y;
+}
+
+function leadingZero(nr)
+{
+	if (nr < 10) nr = "0" + nr;
+	return nr;
+}
